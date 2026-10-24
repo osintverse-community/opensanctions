@@ -50,7 +50,7 @@ secrets:
 runtime:
   kind: docker
   # Filled in by the release workflow with the pushed image's digest.
-  image: ghcr.io/osintverse-community/opensanctions@sha256:0000000000000000000000000000000000000000000000000000000000000000
+  image: ghcr.io/osintverse-community/opensanctions@sha256:b4e96422b705b3bc97bb8120a584d35835a73dfff9b0c489e46c35d58f8ec67c
   platforms: [linux/amd64, linux/arm64]
   command: ["opensanctions", "--name", "{name}", "--company", "{company}", "--birth-date", "{birth_date}", "--country", "{country}", "--limit", "{limit}"]
   output_format: json
